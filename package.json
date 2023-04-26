@@ -1,0 +1,28 @@
+{
+  "name": "inte-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel {src/*.html,src/**/*.html}",
+    "build": "parcel build",
+    "clear": "rm -rf .parcel-cache dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dokkoh/inte-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dokkoh/inte-portfolio/issues"
+  },
+  "homepage": "https://github.com/dokkoh/inte-portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
+  }
+}
