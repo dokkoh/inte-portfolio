@@ -7,12 +7,13 @@
 html {
   overflow-y: scroll;
   --red-dark: #e66767;
+  --orange-dark: #F95E24;
   --red-light: #ea8685;
   --blue-dark: #546de5;
   --blue-light: #778beb;
   --border: rgba(0, 0, 0, .2);
-  --background: rgb(255, 255, 255);
-  --text: black;
+  --background: rgb(0, 0, 0);
+  --text: rgb(255, 255, 255);
   --dark:black;
 }
 
@@ -29,6 +30,13 @@ html {
   position: absolute !important;
   width: 1px !important;
   white-space: nowrap !important;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 body {
@@ -52,10 +60,12 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--blue-light);
+  color: var(--text);
+  font-size: 1.4em;
+  letter-spacing: 0.115em;
 
   &:hover {
-    color: var(--blue-dark);
+    color: var(--orange-dark);
   }
 }
 
