@@ -26,6 +26,7 @@
   <header role="banner" class="header">
     <a class="logo" href="./index.html" title="Retour à l'accueil">
       <img class="logo-img" src="./img/logo.png" alt=""><span class="logo-title">Dokkoh Développement</span></a>
+      <button id="toggler"><i data-feather="menu"></i></button>
       <nav role="navigation" aria-label="Menu principal" class="menu" id="menu">
         <a class="menu-link" href="#">À propos</a>
         <a class="menu-link" href="#">Compétences</a>
@@ -38,7 +39,7 @@
     <h1 class="segment-title">Hi,</h1>
     <h2 class="segment-title">I'm Dokkoh</h2>
     <h3 class="segment-title">&lt;web developer&gt;</h3>
-    <p>FRONT-END & BACK-END | ACCESSIBILITÉ ET QUALITÉ | SAVOIR-ÊTRE</p>
+    <p class="segment-desc">FRONT-END & BACK-END | ACCESSIBILITÉ ET QUALITÉ | SAVOIR-ÊTRE</p>
     <div class="segment-actions">
       <a class="btn" href="#">Me contacter</a>
     </div>
@@ -46,11 +47,17 @@
   </main>
   <!-- FOOTER -->
   <footer role="contentinfo" class="footer">
-    <a class="footer-link" href="https://github.com/dokkoh" aria-label="Lien vers le profil Github de Dokkoh Développement"><i data-feather="github"></i></a>
-    <a class="footer-link" href="mailto:m.bluth@example.com" aria-label="Lien pour contacter Dokkoh Développement par email"><i data-feather="mail"></i></a>
-    <p>Tous droits réservés © Dokkoh Développement 2023</p>
-    <a class="footer-link" href="#" aria-label="Lien vers le plan du site de Dokkoh Développement">Plan du site</a>
+    <div class="footer-side">
+      <a class="footer-link" href="https://github.com/dokkoh" aria-label="Lien vers le profil Github de Dokkoh Développement"><img class="footer-logo" src="/src/img/github-mark-white.png" alt=""></a>
+    <a class="footer-link" href="mailto:m.bluth@example.com" aria-label="Lien pour contacter Dokkoh Développement par email"><img class="footer-logo" src="/src/img/email-logo-png-1125.png" alt=""></a>
+    </div>
+    
+    <p class="footer-desc">Tous droits réservés © Dokkoh Développement 2023</p>
+    <div class="footer-side footer-side--last">
+      <a class="footer-link" href="#" aria-label="Lien vers le plan du site de Dokkoh Développement">Plan du site</a>
     <a class="footer-link" href="#" aria-label="Lien vers les mentions légales de Dokkoh Développement">Mentions Légales</a>
+    </div>
+    
 </footer>
   </div>
 </body>

@@ -1,0 +1,10 @@
+@use '../mixin';
+
+.content {
+  width: 100%;
+  padding: 3rem;
+  background: url('/src/img/Dokkoh_kitsune.png'), url('/src/img/Dokkoh_frontpage.png'), url(''), linear-gradient(66.8deg, #1C2C50 0%, rgba(28, 44, 80, 0) 9.07%, rgba(28, 44, 80, 0) 30%, #1C2C50 60% );
+  background-size: 23rem, 30rem, 15rem, cover;
+  background-position: center bottom, center right 1%, right 26% top 14%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}

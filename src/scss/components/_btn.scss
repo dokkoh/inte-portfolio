@@ -1,0 +1,19 @@
+@use '../vars';
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: var(--button-color);
+  border-radius: 0.5em;
+  font-weight: bold;
+  transition: vars.$defaultTransition;
+  cursor: pointer;
+  border: 0;
+  
+
+  &:hover {
+    background-color: var(--button-color-hover);
+    color: white;
+  }
+}
