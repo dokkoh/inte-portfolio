@@ -1,3 +1,5 @@
+@use "../mixin";
+
 .footer {
   background: linear-gradient(270deg, #233764 0%, rgba(35, 55, 100, 0) 35.88%),
     linear-gradient(90deg, #233764 0%, rgba(35, 55, 100, 0) 36.08%);
@@ -10,23 +12,44 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin:    0rem 1rem 0rem 1rem;
+    margin: 0rem 1rem 0rem 1rem;
 
     &--last {
       justify-content: flex-end;
+      @include mixin.small {
+        text-align: center;
+      }
     }
   }
 
   &-link {
     padding: 1rem;
     font-size: 1.1em;
+    @include mixin.small {
+      font-size: 1em;
+      padding: 0.5rem;
+    }
   }
 
   &-logo {
     width: 4rem;
+    @include mixin.small {
+      width: 3rem;
+    }
   }
 
   &-desc {
     font-size: 0.6em;
+    @include mixin.small {
+      padding: 0.5rem;
+      margin: 0;
+    }
+  }
+}
+
+@include mixin.small {
+  .footer {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -12,20 +12,69 @@
 
 #toggler {
   display: none;
+  color: white;
+  background: transparent;
+  border: 0;
 }
 
 @include mixin.small {
   .menu {
     display: none;
+    &-link {
+      padding: 3rem;
+      font-size: 2em;
+    }
   }
 
   .menu--on .menu {
-    display: block;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(0.7rem);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    animation: slide-in 0.5s forwards;
+  }
+
+  @keyframes slide-in {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  #toggler line {
+    transition: transform .3s ease, opacity .3s ease;
+    transform-origin: 50% 50%;
+  }
+  
+  .menu--on  #toggler line:nth-child(1) {
+    transform: rotate(45deg) translateY(0px);
+  }
+  
+  .menu--on  #toggler line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu--on  #toggler line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-6px);
   }
 
   #toggler {
     display: block;
+    position: fixed;
+    top: 1rem;
+    right: 0.5rem;
+    z-index: 5;
+    
   }
 }
-
-

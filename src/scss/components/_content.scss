@@ -3,8 +3,19 @@
 .content {
   width: 100%;
   padding: 3rem;
-  background: url('/src/img/Dokkoh_kitsune.png'), url('/src/img/Dokkoh_frontpage.png'), url(''), linear-gradient(66.8deg, #1C2C50 0%, rgba(28, 44, 80, 0) 9.07%, rgba(28, 44, 80, 0) 30%, #1C2C50 60% );
-  background-size: 23rem, 30rem, 15rem, cover;
-  background-position: center bottom, center right 1%, right 26% top 14%;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background: url('/src/img/Dokkoh_kitsune.png'), url('/src/img/Dokkoh_frontpage.png'), url('/src/img/dot.png'), url('/src/img/dot.png'), linear-gradient(66.8deg, #1C2C50 0%, rgba(28, 44, 80, 0) 9.07%, rgba(28, 44, 80, 0) 30%, #1C2C50 60% );
+  background-size: 23rem, 30rem, 15rem, 15rem,cover;
+  background-position: center bottom, center right 1%, right 30% top 20%, right 30% top 80%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+@include mixin.small {
+  .content {
+    width: 100%;
+  padding: 3rem;
+  background: url('/src/img/Dokkoh_kitsune.png'), linear-gradient(66.8deg, #1C2C50 0%, rgba(28, 44, 80, 0) 9.07%, rgba(28, 44, 80, 0) 30%, #1C2C50 60% );
+  background-size: 16rem, cover;
+  background-position: 100% 17em, left 110%;
+  background-repeat: no-repeat, no-repeat;
+  }
 }

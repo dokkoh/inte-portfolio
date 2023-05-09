@@ -6,6 +6,9 @@ align-items: center;
 
   &-img {
     width: 8rem;
+    @include mixin.small {
+      width: 4rem;
+    }
   }
 
   &-title {
@@ -13,5 +16,8 @@ align-items: center;
     font-weight: bold;
     letter-spacing: 0.115em;
     color: white;
+    @include mixin.small {
+      font-size: 1em;
+    }
   }
 }
