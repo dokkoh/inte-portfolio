@@ -1,6 +1,6 @@
 # inte-portfolio
 
-## Maquette :
+## Maquette réalisée avec Figma:
 
 ### Home :
 ![image](https://github.com/dokkoh/inte-portfolio/assets/100423136/053c0691-ba5f-4063-8d18-dd044a5c49ad)
